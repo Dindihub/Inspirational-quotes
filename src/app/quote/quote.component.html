@@ -1,2 +1,27 @@
 
+<h1 class="text-center mt-4">MY FAVOURITE INSPIRATIONAL QUOTES</h1>
 
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-8">
+      <h3>My Quotes</h3>
+        <div class="cards-column" >
+          <div *ngFor="let Quote of myQuotes let i=index"class="card" style="width: 24rem;">
+            <div class="card-body">
+              <h4 class="card-title">{{Quote.title}} </h4>
+              <p class="card-text" id="param">{{Quote.quote}} </p>
+              <span class="card-subtitle mb-2">Source:{{Quote.source}} <span id="name"></span><span id="date">on: {{Quote.datePosted}}
+                <span id="datecolor"></span></span></span>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4">
+        <h3>My Form</h3>
+      </div>
+    </div>
+
+
+  </div>
