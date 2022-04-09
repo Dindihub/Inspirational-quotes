@@ -6,11 +6,12 @@
     <div class="col-md-8">
       <h3>My Quotes</h3>
         <div class="cards-column" >
-          <div *ngFor="let Quote of myQuotes let i=index"class="card" style="width: 24rem;">
+          <div *ngFor="let quote of myQuotes; let i=index"class="card" style="width: 24rem;">
             <div class="card-body">
-              <h4 class="card-title">{{Quote.title}} </h4>
-              <p class="card-text" id="param">{{Quote.quote}} </p>
-              <span class="card-subtitle mb-2">Source:{{Quote.source}} <span id="name"></span><span id="date">on: {{Quote.datePosted}}
+              <h4 class="card-title">{{quote.title}} </h4>
+              <p class="card-text" id="param">{{quote.quote}} </p>
+              <app-quote-details></app-quote-details>
+              <span class="card-subtitle mb-2">Source:{{quote.source}} <span id="name"></span><span id="date"> Date: {{quote.datePosted}}
                 <span id="datecolor"></span></span></span>
 
             </div>
@@ -20,6 +21,7 @@
       </div>
       <div class="col-md-4">
         <h3>My Form</h3>
+        <app-quote-form></app-quote-form>
       </div>
     </div>
 
