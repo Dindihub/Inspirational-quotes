@@ -1,1 +1,10 @@
+*{
+    
+    box-sizing: border-box;
+    color: black;
+}
 
+#date{
+    padding: 4px;
+    margin-left:30px;
+}
