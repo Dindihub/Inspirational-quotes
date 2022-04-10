@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## By Sandra Dindi
 ## Description
-This App contains inspirational quotes meant to motivate you through the day.Users can read Qoutes ,vote on most insiring quote and add their favourite quote.
+This App contains inspirational quotes meant to motivate you through the day.Users can read Qoutes ,vote on most inspiring quote and add their favourite quote.
 ## Live Link
 Click [Inpirational Quotes link](https://dindihub.github.io/Delani-Studio) to navigate to site
 
