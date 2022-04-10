@@ -1,27 +1,28 @@
 
-<h1 class="text-center mt-4">MY FAVOURITE INSPIRATIONAL QUOTES</h1>
+<h2 class="text-center mt-4">MY FAVOURITE INSPIRATIONAL QUOTES</h2>
 
 <div class="container">
   <div class="row mt-5">
     <div class="col-md-8">
-      <h3>My Quotes</h3>
-        <div class="cards-column" >
-          <div *ngFor="let quote of myQuotes; let i=index"class="card" style="width: 24rem;">
+      <h3 class="text-center">My Quotes</h3>
+        <div class="cards-column p-4" >
+          <div *ngFor="let quote of myQuotes; let i=index" class="card mb-4 w-100" style="width: 24rem;">
             <div class="card-body">
               <h4 class="card-title">{{quote.title}} </h4>
               <p class="card-text" id="param">{{quote.quote}} </p>
-              <app-quote-details></app-quote-details>
-              <span class="card-subtitle mb-2">Source:{{quote.source}} <span id="name"></span><span id="date"> Date: {{quote.datePosted}}
-                <span id="datecolor"></span></span></span>
+                 <!-- <span class="card-subtitle mb-2 p-4" >Posted by :{{quote.userName}} <span id="name"></span><span id="date"> Date: {{quote.datePosted}}
+                <span id="datecolor"></span></span></span> -->
 
+                <button (click)="upvote(i)"><i class="far fa-thumbs-up"></i>upvote {{quote.upvotes}}</button> <button (click)="downvote(i)">downvote {{quote.downvotes}}<i class="far fa-thumbs-down"></i></button><button (click)="deletequote(i)">Delete</button>
+                <app-quote-details [quote]="quote"></app-quote-details>
             </div>
           </div>
         </div>
 
       </div>
       <div class="col-md-4">
-        <h3>My Form</h3>
-        <app-quote-form></app-quote-form>
+        
+        <app-quote-form (addQuote)="onAddQuote($event)"></app-quote-form>
       </div>
     </div>
 
