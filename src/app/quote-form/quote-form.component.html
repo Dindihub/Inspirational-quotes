@@ -1,16 +1,22 @@
 
-<div class="display-flex justify-content-center align-centent-center"> Enter your Favourite Quote Here
+<div class="display-flex justify-content-center align-centent-center min vh-100 vw-100" >
 
-<form action="">
+<form class="form border p-4 mt-5 ml-3" #form="ngForm">
+    <h3 class="text-center">Add Quote</h3>
 
+<div class="mb-3">
+<label for="name" class="form-label">Name :</label>
+<input type="text" name="name" class="form-control w-100" required [(ngModel)]="name"  ><br>
+<label for="name" class="form-label">Quote Title:</label>
+<input type="text" name="title" class="form-control w-100" required [(ngModel)]="title"><br>
+<label for="text" class="form-label">Your Quote:</label>
+<textarea class="form-control" id="your-quote" rows="4" required name="your-quote"[(ngModel)]="quote" ></textarea>
+<label for="name" class="form-label">Source:</label>
+<input type="text" name="Source" class="form-control w-100" required [(ngModel)]="source"><br>
 
-
-
-
-
+<button (click)="addNewQuote()" class="btn btn-md btn-success ">Submit</button>
+</div>
 
 </form>
-
-
 
 </div>
