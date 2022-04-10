@@ -1,10 +1,13 @@
 
-<h2 class="text-center mt-4">MY FAVOURITE INSPIRATIONAL QUOTES</h2>
+<h2 class="text-center mt-4">INSPIRATIONAL QUOTES</h2>
+<p class="text-center">Many of us resort to reading a motivational or inspirational quote to spur us on, ‘when the going gets tough’". </p>
+<p class="text-center">Motivational quotes provide us with a quick and timely burst of wisdom to get our focus back, offering the inspiration needed for the day or occasion.</p> 
+<p class="text-center">Get inspired and add yours'too</p>
 
 <div class="container">
   <div class="row mt-5">
     <div class="col-md-8">
-      <h3 class="text-center">My Quotes</h3>
+      <h3 class="text-center">Quotes</h3>
         <div class="cards-column p-4" >
           <div *ngFor="let quote of myQuotes; let i=index" class="card mb-4 w-100" style="width: 24rem;">
             <div class="card-body">
@@ -13,7 +16,7 @@
                  <!-- <span class="card-subtitle mb-2 p-4" >Posted by :{{quote.userName}} <span id="name"></span><span id="date"> Date: {{quote.datePosted}}
                 <span id="datecolor"></span></span></span> -->
 
-                <button (click)="upvote(i)"><i class="far fa-thumbs-up"></i>upvote {{quote.upvotes}}</button> <button (click)="downvote(i)">downvote {{quote.downvotes}}<i class="far fa-thumbs-down"></i></button><button (click)="deletequote(i)">Delete</button>
+                <button id="btn1"(click)="upvote(i)"><i class="far fa-thumbs-up"></i>upvote {{quote.upvotes}}</button> <button id="btn2"(click)="downvote(i)">downvote {{quote.downvotes}}<i class="far fa-thumbs-down"></i></button><button (click)="deletequote(i)">Delete</button>
                 <app-quote-details [quote]="quote"></app-quote-details>
             </div>
           </div>

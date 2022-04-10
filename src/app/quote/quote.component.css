@@ -1,10 +1,19 @@
 *{
     
     box-sizing: border-box;
-    color: black;
+
 }
 
 #date{
     padding: 4px;
     margin-left:30px;
 }
+
+#btn1{
+    background-color:green ;
+}
+
+#btn2{
+    background-color:red ;
+}
+
