@@ -16,7 +16,7 @@
                  <!-- <span class="card-subtitle mb-2 p-4" >Posted by :{{quote.userName}} <span id="name"></span><span id="date"> Date: {{quote.datePosted}}
                 <span id="datecolor"></span></span></span> -->
 
-                <button id="btn1"(click)="upvote(i)"><i class="far fa-thumbs-up"></i>upvote {{quote.upvotes}}</button> <button id="btn2"(click)="downvote(i)">downvote {{quote.downvotes}}<i class="far fa-thumbs-down"></i></button><button (click)="deletequote(i)">Delete</button>
+                <button id="btn1"(click)="upvote(i)"> <i class="far fa-thumbs-up"></i>upvote {{quote.upvotes}}</button> <button id="btn2"(click)="downvote(i)">downvote {{quote.downvotes}}<i class="far fa-thumbs-down"></i></button><button (click)="deletequote(i)">Delete</button>
                 <app-quote-details [quote]="quote"></app-quote-details>
             </div>
           </div>
