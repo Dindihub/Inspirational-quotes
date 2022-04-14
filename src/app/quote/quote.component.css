@@ -1,6 +1,7 @@
 *{
     
     box-sizing: border-box;
+    color:white;
 
 }
 
@@ -15,4 +16,23 @@
 
 #btn2{
     background-color:red ;
+}
+
+label{
+    color:black;
+}
+
+.card-title{
+    color: black;
+}
+.card-text{
+    color: black;
+}
+
+h2{
+ color:greenyellow;
+}
+
+.delete{
+    color:black;
 }
