@@ -5,8 +5,8 @@
 
      <hr>
     <p><small class="text-muted">Uploaded by </small> {{quote.name}}</p>
-    <p><small class="text-muted">Posted </small> {{quote.datePosted}} </p>
-    <p> {{quote.datePosted|timeElapsed}} minutes ago</p>
+    <p><small class="text-muted">Posted </small> {{quote.datePosted |date:'mediumDate'}} </p>
+    <p> {{quote.datePosted|timeElapsed}} Days ago</p>
    
     <hr>
 

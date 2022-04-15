@@ -9,8 +9,8 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
   title="Inpirational quotes"
 myQuotes:Array<any>=[
-  new Quote('Muli','Proverbs 3:5','Trust in the LORD with all your heart and lean not on your own understanding','Bible',new Date(),0,0),
-  new Quote('Beth',"Proverbs 10:22","The blessing of the LORD makes a person rich, and he adds no sorrow with it","Bible",new Date(),0,0),
+  new Quote('Muli','Proverbs 3:5','Trust in the LORD with all your heart and lean not on your own understanding','Bible',new Date(2022,3,15),0,0),
+  new Quote('Beth',"Proverbs 10:22","The blessing of the LORD makes a person rich, and he adds no sorrow with it","Bible",new Date(2021,9,5),0,0),
 ]
 
   

@@ -11,7 +11,7 @@
         <div class="cards-column p-4" >
           <div *ngFor="let quote of myQuotes; let i=index" class="card mb-4 w-100" style="width: 24rem;">
             <div class="card-body">
-              <h4 class="card-title">{{quote.title}} </h4>
+              <h4 class="card-title" appHighlight>{{quote.title}} </h4>
               <p class="card-text" id="param">{{quote.quote}} </p>
                  <!-- <span class="card-subtitle mb-2 p-4" >Posted by :{{quote.userName}} <span id="name"></span><span id="date"> Date: {{quote.datePosted}}
                 <span id="datecolor"></span></span></span> -->
